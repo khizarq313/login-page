@@ -9,18 +9,43 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="overlay"></div>
+    <section class="result">
+      <div class="loginSuccess">
+        <h3>Login Success!</h3>
+        <p>Welcome Khizar!</p>
+        <button href="#" class="success-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          OK
+        </button>
+      </div>
+      <div class="loginFailed">
+        <h3>Login Failed!</h3>
+        <p>Please enter valid username or password</p>
+        <button href="#" class="fail-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Try Again
+        </button>
+      </div>
+    </section>
     <div class="login-box">
       <h2>Login</h2>
       <form>
         <div class="user-box">
-          <input type="text" name="" required="" />
+          <input type="text" />
           <label>Username</label>
         </div>
         <div class="user-box">
-          <input type="password" name="" required="" />
+          <input type="password" />
           <label>Password</label>
         </div>
-        <button href="#" class="submitbutton">
+        <button href="#" class="submitbutton" type="submit">
           <span></span>
           <span></span>
           <span></span>
@@ -29,15 +54,5 @@
         </button>
       </form>
     </div>
-    <section class="result">
-      <div class="loginSuccess">
-        <h3>Login Success!</h3>
-        <p>Welcome Khizar!</p>
-      </div>
-      <div class="loginFailed">
-        <h3>Login Failed!</h3>
-        <p>Please enter valid username or password</p>
-      </div>
-    </section>
   </body>
 </html>
