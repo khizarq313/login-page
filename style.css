@@ -203,3 +203,22 @@ button span:nth-child(4) {
 .visible {
   display: block;
 }
+
+@media screen and (max-width:500px) {
+  .login-box{
+    width: 80vw;
+  }
+  .result{
+    width: 80vw;
+  }
+  .overlay{
+    width: 80vw;
+  }
+  .loginFailed{
+    width: 80vw;
+  }
+  .loginSuccess{
+    width: 80vw;
+  }
+  
+}
