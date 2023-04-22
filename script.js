@@ -9,8 +9,6 @@ const openSignupPage = () => {
     signupPage.classList.add("slideDown");
     loginPage.classList.remove("slideUp");
     signupPage.classList.remove("slideUp");
-    loginPage.classList.add("hidden");
-    signupPage.classList.remove("hidden");
     document.title = "Sign up";
 }
 
@@ -19,8 +17,6 @@ const openLoginPage = () => {
     loginPage.classList.add("slideUp");
     loginPage.classList.remove("slideDown");
     signupPage.classList.remove("slideDown");
-    loginPage.classList.remove("hidden");
-    signupPage.classList.add("hidden");
     document.title = "Log in";
 }
 

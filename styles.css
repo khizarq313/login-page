@@ -46,6 +46,8 @@ button {
     box-shadow: 0px 1px 10px 0px black;
     text-align: center;
     overflow: hidden;
+    color: white;
+    background-color: #1e1d3e;
 }
 
 .signup-page,.login-page {
@@ -57,6 +59,7 @@ button {
 }
 
 .signup-page {
+    position: relative;
     color: white;
     background-color: #1e1d3e;
 }
@@ -84,36 +87,72 @@ button {
     color: #5b478f;
     padding-top: 1rem;
     padding-bottom: 3rem;
+    position: relative;
+    width: 100%;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    background: white;
 }
 
-.nav-btn {
+.login-title::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1d3e;
+    z-index: -1;
+}
+
+.login-btn,.signup-btn {
+    margin-top: 20px;
+}
+
+.login-nav-btn,.signup-nav-btn {
+    font-weight: 600;
+    width: 100%;
+    margin: 0;    
     background-color: transparent;
     color: white;
     border: 1px solid #1e1d3e;
 }
 
-.login-nav-btn,.signup-nav-btn {
-    font-weight: 600;
-    height: 6rem;
-    width: 100%;
-    margin: 0;
+.login-nav-btn {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    color: #5b478f;
+    bottom:70px;
+    height: 3rem;
+    width: 60%;
+    border: 0;
 }
 
-.login-nav-btn{
-    background-color: white;
-    border-top-right-radius: 100%;
-    border-top-left-radius: 100%;
-    color: #5b478f;
-    margin-top: 6.5rem;
+.login-text {
+    position: absolute;
+    z-index: 1;
+    bottom:30px;
+    height: 3rem;
+    width: 60%;
+    border: 0;
+}
+
+.signup-text {
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #1e1d3e;
+    border-radius: 0;
+    color: white;
 }
 
 .signup-nav-btn{
+    padding-top: 15px;
+    height: 4rem;
     background-color: #1e1d3e;
     border-radius: 0;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
     color: white;
-    margin-bottom: 10px;
 }
 
 .slideUp {
@@ -127,7 +166,8 @@ button {
 }
 
 .hidden {
-    transition: all 0.5s;
+    display: none;
+    transition: all 1s;
 }
 
 @media screen and (max-width: 400px) {
@@ -135,9 +175,17 @@ button {
         font-size: 50%;
     }
     button {
-        height: 5rem;
+        height: 30px;
     }
     .login-nav-btn {
     margin-top: 4rem;
+    bottom:50px;
+    height: 30px;
+    }
+    .login-text {
+        bottom: 20px;
+    }
+    .login-btn,.signup-btn {
+        margin-top: 10px;
     }
 }
